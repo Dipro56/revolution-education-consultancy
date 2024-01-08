@@ -18,13 +18,13 @@ const Navbar = () => {
           <p className="mx-2">Logo</p>
         </div>
         <div className="flex items-center">
-          <p className="text-md mx-2 cursor-pointer border-b-2 border-transparent hover:text-red-500 hover:border-red-500 transition duration-300">
+          <p className="text-lg font-bold mx-2 cursor-pointer border-b-2 border-transparent hover:text-red-500 hover:border-red-500 transition duration-300">
             HOME
           </p>
-          <p className="text-md mx-2 cursor-pointer border-b-2 border-transparent hover:text-red-500 hover:border-red-500 transition duration-300">
+          <p className="text-lg font-bold mx-2 cursor-pointer border-b-2 border-transparent hover:text-red-500 hover:border-red-500 transition duration-300">
             SCHOLARSHIP
           </p>
-          <p className="text-md mx-2 cursor-pointer border-b-2 border-transparent hover:text-red-500 hover:border-red-500 transition duration-300">
+          <p className="text-lg font-bold mx-2 cursor-pointer border-b-2 border-transparent hover:text-red-500 hover:border-red-500 transition duration-300">
             CONTACT
           </p>
           <FaBars className="mx-2 cursor-pointer" onClick={handleDrawer} />
