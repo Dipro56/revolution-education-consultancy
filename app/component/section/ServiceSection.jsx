@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
 import ServiceCard from '../card/ServiceCard';
 import { FaPeopleCarryBox } from 'react-icons/fa6';
 import { FaUniversity } from 'react-icons/fa';
@@ -6,12 +7,27 @@ import { FaPassport } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import { FaPlane } from 'react-icons/fa';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const ServiceSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
-    <div id='service' className="flex flex-col justify-center items-center  w-full p-5 lg:p-28">
+    <div
+      id="service"
+      className="flex flex-col justify-center items-center  w-full p-5 lg:p-28"
+    >
       <h1 className="text-3xl font-semibold">Our Serivce</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 gap-10">
-        <div className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100">
+        <div
+          data-aos="flip-right"
+          className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100"
+        >
           <div className="p-5 bg-blue-200 rounded-full border-blue-700 border-2">
             <FaPeopleCarryBox size={35} fill="black" />
           </div>
@@ -24,7 +40,10 @@ const ServiceSection = () => {
           </p>
         </div>
 
-        <div className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100">
+        <div
+          data-aos="flip-right"
+          className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100"
+        >
           <div className="p-5 bg-blue-200 rounded-full border-blue-700 border-2">
             <FaUniversity size={35} fill="black" />
           </div>
@@ -38,7 +57,10 @@ const ServiceSection = () => {
           </p>
         </div>
 
-        <div className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100">
+        <div
+          data-aos="flip-right"
+          className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100"
+        >
           <div className="p-5 bg-blue-200 rounded-full border-blue-700 border-2">
             <FaPassport size={35} fill="black" />
           </div>
@@ -53,7 +75,10 @@ const ServiceSection = () => {
           </p>
         </div>
 
-        <div className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100">
+        <div
+          data-aos="flip-right"
+          className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100"
+        >
           <div className="p-5 bg-blue-200 rounded-full border-blue-700 border-2">
             <FaHome size={35} fill="black" />
           </div>
@@ -66,7 +91,10 @@ const ServiceSection = () => {
           </p>
         </div>
 
-        <div className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100">
+        <div
+          data-aos="flip-right"
+          className="p-6 rounded-lg shadow-xl flex flex-col justify-start items-center cursor-pointer hover:border-2 hover:border-blue-700 hover:bg-blue-100"
+        >
           <div className="p-5 bg-blue-200 rounded-full border-blue-700 border-2">
             <FaPlane size={35} fill="black" />
           </div>

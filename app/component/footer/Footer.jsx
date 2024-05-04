@@ -7,17 +7,17 @@ import { RiInstagramFill } from 'react-icons/ri';
 
 const Footer = () => {
   return (
-    <div className="w-full px-24 py-5 bg-indigo-950">
-      <div className="grid grid-cols-3 justify-center items-center">
-        <div className="flex items-center gap-3">
-          <Image src={'/logo.PNG'} height={150} width={150} alt="logo" />
+    <div className="w-full px-10 md:px-24 py-5 bg-indigo-950">
+      <div className="grid grid-cols-1 md:grid-cols-3 justify-start md:justify-center items-start md:items-center gap-10">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+          <Image src={'/rc_logo.PNG'} height={150} width={150} alt="logo" />
           <div>
             <h1 className="text-white">Email: test@gmail.com</h1>
             <h1 className="text-white">Phone: 01717680510</h1>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center  gap-3">
+        <div className="flex flex-col justify-center items-start md:items-center  gap-3">
           <Link href={'#about_us'}>
             <p className="text-white text-md">About Us</p>
           </Link>
@@ -31,8 +31,8 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center gap-3">
-          <h1 className="text-xl text-white">Follow Us</h1>
+        <div className="flex flex-col items-start md:items-center  gap-3">
+          <h1 className="text-md text-white">Follow Us</h1>
           <div className="flex">
             <FaFacebookSquare
               className="mx-2 cursor-pointer"

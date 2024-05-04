@@ -3,7 +3,7 @@ import { FaPhoneAlt } from 'react-icons/fa';
 
 const SocialNavbar = () => {
   return (
-    <div className="bg-indigo-950 py-4 text-white flex justify-between items-center px-72">
+    <div className="hidden md:visible md:flex bg-indigo-950 py-4 text-white  justify-between items-center px-5 md:px-10 lg:px-28">
       <div className='flex flex-col justify-center'>
         <p className='text-lg'>Book an Appoinment</p>
         <div className="flex items-center">

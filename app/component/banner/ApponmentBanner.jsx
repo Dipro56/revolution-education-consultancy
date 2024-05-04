@@ -2,7 +2,7 @@ import React from 'react';
 
 const ApponmentBanner = () => {
   return (
-    <div className="flex justify-between bg-indigo-950 py-10 px-28 w-full">
+    <div className="flex flex-col gap-10 md:flex-row justify-between bg-indigo-950 py-10 px-5 md:px-10 lg:px-28 w-full">
       <div className="flex flex-col">
         <h1 className="text-white text-2xl font-bold">Get Consultation</h1>
         <h1 className="text-gray-200 text-md">

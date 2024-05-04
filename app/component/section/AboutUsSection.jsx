@@ -1,8 +1,17 @@
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutUsSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
-    <div id="about_us" className="px-36 my-20">
+    <div data-aos="fade-up" id="about_us" className="px-5 md:px-16 lg:px-36 my-20">
       <h1 className="text-3xl font-semibold text-center mb-10">About Us</h1>
       <h1 className="text-lg text-gray-500">
         Revolution Education Consultants is situated at the heart of the capital
